@@ -1,0 +1,27 @@
+{
+  "name": "SI",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "express": "4.13.3"    
+  },
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+      "node": "4.2.3",
+      "npm": "2.14.7"
+    },
+
+  "keywords": [
+    "SI"
+  ],
+  "author": "Roberto Paredes",
+  "license": "is",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://github.com/CarlosCetina/Si/blob/master/README.md"
+}
