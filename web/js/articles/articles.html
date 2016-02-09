@@ -1,0 +1,38 @@
+<div ng-controller="articlesController">
+
+	<div class="col-md-8">		
+		<div>
+ 			<p ng-bind-html="articlesHTML"></p>
+ 		</div>
+ 		<div ng-show="articlesHTML" class="articles-css">
+ 			<div>
+	 			<textarea ng-model="newComment" placeholder="Escribir comentario"></textarea>
+	 			<button ng-click="addComment()">Enviar</button>
+ 			</div>
+ 			<br>
+ 			<div class="comments">
+ 				<h4 ng-repeat="comment in articlesComments">{{comment}}</h4>
+ 			</div>
+ 		</div>
+	</div>
+	<div class="col-md-4">
+		<sponsor sponsor-img="sponsor.img" titulo="sponsor.titulo" subtitulo="sponsor.subtitulo"></sponsor>
+		<ul>
+			<li ng-repeat="anio in articlesList">
+				<a ng-click="toggleMonths(anio)">{{anio.anio}}
+			        <ul ng-show="selectedYear.anio == anio.anio">
+			    	    <li ng-repeat="month in anio.months">
+			    		    <a ng-click="toggleArticles(month)">{{month.name}}
+			    		    	<ul ng-show="selectedMonth.name == month.name && selectedYear.anio == anio.anio">
+			    		    		<li ng-repeat="article in month.articles">
+			    		    			<a ng-click="loadArticles(article.id)">{{article.title}}</a>
+			    		    		</li>
+			    		    	</ul>
+			    		    </a>
+			    	    </li>
+			        </ul>
+			    </a>
+		    </li>
+		</ul>
+	</div>
+</div>

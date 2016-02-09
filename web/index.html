@@ -1,0 +1,70 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<script type="text/javascript" src="web/lib/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="web/lib/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="web/lib/angular.min.js"></script>
+	<script type="text/javascript" src="web/lib/angular-route.js"></script>
+	<script type="text/javascript" src="web/lib/angular-sanitize.js"></script>
+	<script type="text/javascript" src="web/lib/ui-bootstrap-tpls-1.0.3.min.js"></script>
+
+	<link rel="stylesheet" href="web/lib/bootstrap/css/bootstrap.css"></link>
+
+	<!--Module Main -->
+	<script type="text/javascript" src="web/js/si.module.js"></script>
+	<!--Route -->
+	<script type="text/javascript" src="web/js/index/index.config.js"></script>
+	<!--Directives Section -->
+	<script type="text/javascript" src="web/js/directives/directives.module.js"></script>
+	<!--Service Section -->
+	<script type="text/javascript" src="web/js/service/service.module.js"></script>
+
+
+	<!--Nav Bar Code -->
+	<script type="text/javascript" src="web/js/directives/nav.js"></script>
+	<script type="text/javascript" src="web/js/index/index.module.js"></script>
+	<script type="text/javascript" src="web/js/index/index.controller.js"></script>
+	<link rel="stylesheet" href="web/css/si.css"></link>
+
+	<!--Main Code -->
+	<script type="text/javascript" src="web/js/index/main.controller.js"></script>
+
+	<!--Contact Section -->
+	<script type="text/javascript" src="web/js/contact/contact.module.js"></script>
+	<script type="text/javascript" src="web/js/contact/contact.controller.js"></script>
+	<!--Downloads Section -->
+	<script type="text/javascript" src="web/js/downloads/downloads.module.js"></script>
+	<script type="text/javascript" src="web/js/downloads/downloads.controller.js"></script>
+	<!--Events Section -->
+	<script type="text/javascript" src="web/js/events/events.module.js"></script>
+	<script type="text/javascript" src="web/js/events/events.controller.js"></script>
+	<!--Articles Section -->
+	<script type="text/javascript" src="web/js/articles/articles.module.js"></script>
+	<script type="text/javascript" src="web/js/articles/articles.controller.js"></script>
+	<!--Jobs Section -->
+	<script type="text/javascript" src="web/js/jobs/jobs.module.js"></script>
+	<script type="text/javascript" src="web/js/jobs/jobs.controller.js"></script>
+	<!--Videos Section -->
+	<script type="text/javascript" src="web/js/videos/videos.module.js"></script>
+	<script type="text/javascript" src="web/js/videos/videos.controller.js"></script>
+	<!--News Section -->
+	<script type="text/javascript" src="web/js/news/news.module.js"></script>
+	<script type="text/javascript" src="web/js/news/news.controller.js"></script>
+
+	<!--Sponsors Section -->
+	<script type="text/javascript" src="web/js/directives/sponsor.js"></script>
+	<script type="text/javascript" src="web/js/service/sponsor.service.js"></script>
+
+
+	<title>Salud Integral</title>
+</head>
+
+<body ng-app="si">
+	<div ng-controller="indexController">
+		<ng-include src="'web/js/index/index.header.html'"></ng-include>
+		<si-nav pages="navItems"></si-nav>
+	</div>	
+	<div ng-view></div>
+</body>
+</html>

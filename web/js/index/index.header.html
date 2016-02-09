@@ -1,0 +1,26 @@
+<header>
+	<div class="row">
+  		<div class="col-sm-4 col-md-6">
+  			<i class="logo-si"></i>
+  		</div>
+  		<!--div class="col-sm-12 col-md-6 hidden-md hidden-lg"    visible-md visible-lg>
+  			<i class="logo-si"></i>
+  		</div-->
+  		<div class="col-sm-8 col-md-6 session">
+  			<form class="form-inline">
+		  	      <button type="submit" class="btn btn-default session visible-md visible-lg" ng-click="login()">{{session.button}}</button>
+	  			  <div ng-show="isFormShowing" class="login-form-inline session">
+					  <div class="form-group">
+					    <label>Usuario</label>
+					    <input type="text" class="form-control" ng-model="user" placeholder="Usuario">
+					  </div>
+					  <div class="form-group">
+					    <label>Contraseña</label>
+					    <input type="password" class="form-control" ng-model="password" placeholder="Contraseña">
+					  </div>
+				  </div>
+				  <button type="submit" class="btn btn-default session hidden-md hidden-lg" ng-click="login()">{{session.button}}</button>
+			</form>
+		 </div>
+	</div>
+</header>

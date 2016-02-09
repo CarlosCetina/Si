@@ -1,0 +1,15 @@
+<div class="col-md-12">
+					<!--uib-pagination total-items="pets.length" ng-model="currentPage" max-size="maxSize" ng-change="pageChanged()"></uib-pagination-->
+	<uib-pagination total-items="news.length" max-size="pages" class="col-md-5 pagination-sm " boundary-links="true" rotate="false" num-pages="numPages" ng-model="currentPage" ng-change="pageChanged()"></uib-pagination>
+	<pre class="col-md-2 col-md-offset-5 ">Page: {{currentPage}} / {{numPages}}</pre>    
+</div>
+<div class="row">
+	<div class="col-md-4 news-details" ng-repeat="new in news | limitTo : limit : begin">
+		<h4>{{new.title}}</h4>
+		<img ng-src="{{new.img}}" class="img-news">
+		<br>
+		<span>{{new.date}}</span>
+		<p class="comments">{{new.description}}</p>
+		<a href="">Leer Nota</a>
+	</div>
+</div>

@@ -1,0 +1,9 @@
+<div>
+	<div class=" search-text col-md-12">
+		<input class="search-downloads" type="text" ng-model="searchFile" placeholder="Buscar">
+		<a><i class="glyphicon glyphicon-search"></i></a>
+	</div>
+	<div class="list-group col-md-7">
+	  <a ng-repeat="file in files | filter : {name : searchFile}" href="#" class="list-group-item">{{file.name}}</a>
+	</div>
+</div>

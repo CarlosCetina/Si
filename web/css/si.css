@@ -1,0 +1,161 @@
+.logo-si{
+	display: block;
+	background-image: url(../img/si/logo.jpg);
+	background-size: 100% 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 200px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.navbar {
+    margin-bottom: 15px !important;
+}
+
+.session{
+	float: right;
+	padding-right: 2%;
+}
+.login-form-inline{
+	display: inline;
+}
+.carousel-control.right,.carousel-control.left {
+    background-image: none;
+    padding-left: 15px !important;
+}
+.carousel-img{
+	padding-bottom: 15px;
+}
+
+.btn-contact{
+	float: right;
+}
+.textarea-contact{
+	height: 150px !important;
+}
+.list-group{
+	padding-left: 15px !important;
+}
+.date-events{
+	display: inline-block;
+	padding-left: 20px;
+}
+.row{
+    margin-left: 0px !important;	
+}
+
+.img-sponsor{
+	max-width: 100%;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.add-comment{
+    width: auto;
+	margin: 0 auto;
+	/*padding-top: 2%;
+	padding-bottom: 2%;*/
+}
+.comments{
+	width: 100%; 
+    word-break: break-all;
+	text-align: left;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.who-we-are{
+	width: 1024px;
+    border: 0px solid;
+    min-height: 400px;
+	margin: 10px auto 20px auto;
+	color: #8c989e;
+}
+/*.wwa-mision{
+	background-color: #d7ebff;
+}*/
+@media screen and (max-width: 1024px){
+	.who-we-are {
+    	width: 100%;
+    	padding-left: 5%;
+		padding-right: 5%;
+    }	
+    .search-downloads{
+		width: 30%;
+		height: 8%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px) { 
+
+	.logo-si{
+	    width: 600px;
+	    height: 300px;
+	}
+/*	.search-downloads{
+		width: 100%;
+		height: 8%;
+	}*/
+}
+
+@media (max-width: 767px){
+
+	.logo-si{
+	    width: 400px;
+	    height: 200px;
+	}
+/*	.search-downloads{
+		width: 95% !important;
+		height: 8%;
+	}*/
+}
+
+@media (max-width: 480px) {
+
+	.logo-si{
+	    width: 200px;
+	    height: 100px;
+	}
+	.search-downloads{
+		width: 92% !important;
+		height: 8%;
+	}
+}
+
+
+.search-text{
+	padding-bottom: 1%;
+}
+.search-downloads{
+	width: 20%;
+	height: 5%;
+}
+
+.jobs-nav{
+	padding-left: 1%;
+	padding-right: 3%;
+}
+.img-news{
+	height: 30%;
+	width: auto;
+}
+.news-details{
+	margin-bottom: 2%;
+}
+
+.video-list{
+	height: 90%;
+	overflow-y: scroll;
+}
+.video-img{
+	height: 40%;
+	width: auto;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+.video-span{
+	vertical-align: middle;
+}

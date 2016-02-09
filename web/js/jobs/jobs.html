@@ -1,0 +1,17 @@
+<div>
+	<!--div class="list-group col-md-9">
+	    <a ng-repeat="job in jobs" href="#" class="list-group-item">{{job.name}}</a>
+	</div-->
+	<div class="row">
+      <div class="col-md-7 jobs-nav">    
+        <uib-accordion close-others="oneAtATime" ng-repeat="job in jobs">
+          <uib-accordion-group heading="{{job.name}}" is-open="job.isFirstOpen" is-disabled="job.isFirstDisabled" class="comments">
+   			{{job.descripcion}}
+          </uib-accordion-group>
+        </uib-accordion>
+      </div>
+      <div class="col-md-5">
+		<sponsor ng-repeat="sponsor in sponsors" sponsor-img="sponsor.img" titulo="sponsor.titulo" subtitulo="sponsor.subtitulo"></sponsor>
+	</div>
+    </div>
+</div>
